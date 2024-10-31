@@ -58,7 +58,6 @@ def input_option(m: str, options: list):
         raw = input_int("indique el [n]úmero de la opción")
 
         if raw in mapped:
-            print()
             return mapped[raw]
         
         print_err(f"{raw} no es una opción válida")
@@ -86,7 +85,6 @@ def input_int(m: str):
 
         try:
             res =  int(raw)
-            print()
             return res
         except ValueError:
             print_err(f"'{raw}' debe ser número un entero")
@@ -98,7 +96,6 @@ def input_float(m: str):
 
         try:
             res = float(raw.replace(",", "."))
-            print()
             return res
         except ValueError:
             print_err(f"'{raw}' debe ser número un decimal")

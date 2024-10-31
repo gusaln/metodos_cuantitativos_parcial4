@@ -1,0 +1,23 @@
+
+--- Parte 1: Crear problema ---
+Número de ciudades 6
+Tiempos:
+[0, 35, 20, 40, 30, 60]
+[35, 0, 45, 35, 20, 70]
+[20, 45, 0, 15, 55, 20]
+[40, 35, 15, 0, 65, 35]
+[30, 20, 55, 65, 0, 40]
+[60, 70, 20, 35, 40, 0]
+Variable de decisión: x_0,x_1,x_2,x_3,x_4,x_5
+Cota superior del tiempo: 30 minutos
+
+--- Parte 2: Resolviendo el problema usando el algoritmo entero binario ---
+
+--- Parte 3: Resolver ---
+Estado de la solución: Optimal
+
+--- Parte 4: Detalles de la solución ---
+Nro. mínimo de estaciones: 2.0
+Ubicaciones:
+Ciudad 2
+Ciudad 3
