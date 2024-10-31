@@ -11,6 +11,7 @@ class MetodoBinario:
         self.ciudades_count = 0
         self.tiempos = []
         self.stream = None
+        self.modelo = None
 
     def leer_input(self):
         self.stream = io.StringIO()

@@ -1,0 +1,30 @@
+
+--- Parte 1: Crear problema ---
+Número de hornos 4
+Datos para el horno 1: {'capacidad': 1500, 'costo_fijo': 80.0, 'costo_variable': 30.0}
+Datos para el horno 2: {'capacidad': 2000, 'costo_fijo': 100.0, 'costo_variable': 25.0}
+Datos para el horno 3: {'capacidad': 1800, 'costo_fijo': 85.0, 'costo_variable': 28.0}
+Datos para el horno 4: {'capacidad': 1700, 'costo_fijo': 90.0, 'costo_variable': 32.0}
+Variable de decisión: x0,x1,x2,x3
+Variable de decisión: y0,y1,y2,y3
+Función objetivo: 80.0 * y0 + 30.0 * x0 + 100.0 * y1 + 25.0 * x1 + 85.0 * y2 + 28.0 * x2 + 90.0 * y3 + 32.0 * x3
+Restricción: x0 <= 1500 * y0
+Restricción: x1 <= 2000 * y1
+Restricción: x2 <= 1800 * y2
+Restricción: x3 <= 1700 * y3
+
+--- Parte 2: Resolviendo el problema usando el algoritmo entero mixto ---
+
+--- Parte 3: Resolver ---
+Estado de la solución: Optimal
+
+--- Parte 4: Detalles de la solución ---
+x0 = 0.0
+x1 = 2000.0
+x2 = 1000.0
+x3 = 0.0
+y0 = 0.0
+y1 = 1.0
+y2 = 1.0
+y3 = 0.0
+Costo total = 78185.0
