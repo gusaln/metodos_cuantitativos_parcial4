@@ -1,0 +1,18 @@
+
+--- Parte 1: Crear problema ---
+Variables: ['x1', 'x2']
+Restricción 1: 2*x1 + 4*x2 <= 12
+Restricción 2: 4*x1 + 3*x2 <= 16
+Tipo: max
+Función Objetivo: 4*x1 + 6*x2
+
+--- Parte 2: Resolviendo el problema usando el algoritmo de ramificación y cortes ---
+
+--- Parte 3: Resolver ---
+Estado de la solución: Optimal
+
+--- Parte 4: Detalles de la solución ---
+Valor objetivo: 20.0
+Valores de las variables:
+x1 = 2.0
+x2 = 2.0

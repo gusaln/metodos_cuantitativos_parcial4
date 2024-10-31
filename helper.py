@@ -66,13 +66,16 @@ def input_option(m: str, options: list):
 
 
 def input_str(m: str):
-    return input(f"--> {m}: ").strip()
+    raw = input(f"--> {m}: ").strip()
+    print()
+    return raw
 
 def input_re(m: str, pattern: re.Pattern, err: str = None):
     while True:
         raw = input(f"--> {m}: ").strip()
 
         if re.match(pattern, raw):
+            print()
             return raw
         print_err(err if err is not None else f"'{raw}' no es válido")
         
@@ -82,7 +85,9 @@ def input_int(m: str):
         raw = input_str(m)
 
         try:
-            return int(raw)
+            res =  int(raw)
+            print()
+            return res
         except ValueError:
             print_err(f"'{raw}' debe ser número un entero")
 
@@ -92,6 +97,8 @@ def input_float(m: str):
         raw = input_str(m)
 
         try:
-            return float(raw.replace(",", "."))
+            res = float(raw.replace(",", "."))
+            print()
+            return res
         except ValueError:
             print_err(f"'{raw}' debe ser número un decimal")
